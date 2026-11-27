@@ -1,3 +1,5 @@
+"""Unit tests for the FastAPI endpoints in main.py."""
+
 from fastapi.testclient import TestClient
 
 from main import app
