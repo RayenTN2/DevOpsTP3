@@ -1,65 +1,12 @@
-# First Python Application — FastAPI
+# TP3 — FastAPI CI Pipeline (Pytest, Coverage, Pylint & GitHub Actions)
 
 ## Description
 
-This project is a simple Python web application built with **FastAPI**.
+This project is a Python web application built with **FastAPI** and automated with **GitHub Actions** for Continuous Integration (CI).
 
-The application exposes a `GET /` endpoint that returns the following JSON response:
-
-```json
-{
-  "message": "it works !"
-}
-```
-
-## Installation
-
-Install the required dependencies:
-
-```bash
-pip install fastapi uvicorn
-```
-
-## Running the Application
-
-Start the application with the following command:
-
-```bash
-uvicorn main:app --reload
-```
-
-The application will be available at:
-
-http://127.0.0.1:8000
-
-## How to Test the Application
-
-### 1. Test the root endpoint
-
-Open the following URL in your browser:
-
-http://127.0.0.1:8000/
-
-Expected response:
+In addition to the initial endpoints, it includes the `/soustraction` endpoint (`GET /soustraction?a=...&b=...`), which returns the difference between two numbers:
 
 ```json
 {
-  "message": "it works !"
+  "resultat": 6.0
 }
-```
-
-### 2. Test using FastAPI Swagger UI
-
-Open:
-
-http://127.0.0.1:8000/docs
-
-Click on `GET /`, then click **Try it out** and **Execute** to test the endpoint.
-
-## Project Structure
-
-```text
-.
-├── main.py
-└── README.md
-```
